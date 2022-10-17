@@ -1,0 +1,59 @@
+.card {
+  width: 210px;
+  border: 1px solid var(--grey);
+  border-radius: 40px;
+  padding: 29px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.07);
+    transform: translateY(-8px)
+  }
+
+  .favorite {
+    position: relative;
+    //в данном случае position: absolute; вырывает из потока элемент так как будто его никогда и не было. Подробнее читай на https://learn.javascript.ru/position
+    img {
+      position: absolute;
+      cursor: pointer;
+    }
+
+  }
+
+  p {
+    margin: 14px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .price {
+    display: flex;
+    justify-content: space-between;
+
+    .priceText {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+
+      b {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .plus {
+    cursor: pointer;
+  }
+}

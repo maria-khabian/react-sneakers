@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*--------------------Обнуление--------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 18px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+/*---------------------  Убираем скролл-бар  ---------------------*/
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+/*---------------------  Убираем скролл-бар  ---------------------*/
+
+* {
+  font-family: 'Inter';
+}
+
+textarea {
+  resize: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: black
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+:root {
+  --grey: #e4e4e4;
+}
+
+body {
+  background: #dcf8ff;
+  font-family: 'Inter';
+}
+
+.wrapper {
+  background: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+main {
+  padding: 0 60px;
+
+  .mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+    }
+  }
+}
+
+.sneakersCard {
+  display: flex;
+  //justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -40px;
+}
+
+.searchBlock {
+  position: relative;
+  max-width: 250px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+
+  input {
+    padding: 13px 0px 13px 13px;
+    font-size: 14px;
+  }
+
+  .close {
+    position: absolute;
+    top: calc(50% - 11px);
+    right: 8px;
+    cursor: pointer;
+  }
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  padding: 0 30px;
+
+  img {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    align-self: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.4;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+}

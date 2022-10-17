@@ -1,0 +1,82 @@
+
+.greenBtn {
+  position: relative;
+  background: #9DD558;
+  border-radius: 18px;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+
+  img {
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 30px;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &:disabled{
+    background-color: #bebebe;
+    cursor: default;
+  }
+
+  &:hover {
+
+    //надо указать img иначе двигается не стрелка а вся кнопка, тк мы применили hover к кнопке
+    img {
+      transform: translateX(5px);
+    }
+
+    background: lighten($color: #9DD558, $amount: 5%);
+  }
+
+  &:active {
+    background: darken($color: #9DD558, $amount: 5%);
+  }
+
+}
+.emptyCart {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  padding: 0 30px;
+  img {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  h3 {
+    align-self: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.4;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .greenBtn {
+  
+    img {
+      transform: rotate(180deg);
+      position: absolute;
+      top: calc(50% - 6px);
+      left: 30px;
+      transition: transform 0.15s ease-in-out;
+    }
+  
+    &:hover {
+      //надо указать img иначе двигается не стрелка а вся кнопка, тк мы применили hover к кнопке
+      img {
+        transform: rotate(180deg) translateX(5px);
+      }
+    }
+  }
+  
+}

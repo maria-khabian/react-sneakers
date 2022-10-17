@@ -1,0 +1,24 @@
+.headerFavorites {
+    margin: 40px 0;
+
+    .headerTitle {
+        margin-bottom: 40px;
+        display: flex;
+
+        .back {
+            cursor: pointer;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 32px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.favoritesCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -40px;
+}
