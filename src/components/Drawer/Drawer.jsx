@@ -79,7 +79,7 @@ function Drawer({ items = [], onCloseCart, onDelete, opened }) {
               <li>
                 <span>Налог 5%:</span>
                 <div></div>
-                <b>{(totalPrice / 100) * 5} руб. </b>
+                <b>{((totalPrice / 100) * 5).toFixed(2)} руб. </b>
               </li>
             </ul>
             <button disabled={isLoading} onClick={onClickOrder} className={st.greenBtn}>
