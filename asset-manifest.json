@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-sneakers/static/css/main.d68c8c4f.css",
+    "main.js": "/react-sneakers/static/js/main.f729ab1b.js",
+    "static/media/completeOrder.jpg": "/react-sneakers/static/media/completeOrder.c8e0c5d6fe0c07413a53.jpg",
+    "static/media/cheked.svg": "/react-sneakers/static/media/cheked.890c21e6e092e231b04d7f8d3b23767a.svg",
+    "static/media/unliked.svg": "/react-sneakers/static/media/unliked.dbddb85a65c80405e2d8ac198b59ea70.svg",
+    "static/media/like.svg": "/react-sneakers/static/media/like.fb6fc173851dd67a64d51b7306e810d1.svg",
+    "static/media/liked.svg": "/react-sneakers/static/media/liked.2a7f884671a17364cb52939425ca405f.svg",
+    "static/media/user.svg": "/react-sneakers/static/media/user.381202f7e3edbc1a00b14fbd5e529a32.svg",
+    "static/media/basket.svg": "/react-sneakers/static/media/basket.5113b08fb682dc25f3856ef704a6c05d.svg",
+    "index.html": "/react-sneakers/index.html",
+    "static/media/search.svg": "/react-sneakers/static/media/search.48c52bf5d459537e27c07f88eb08c050.svg",
+    "static/media/close.svg": "/react-sneakers/static/media/close.b1fef0aa93fbf25374f4991d23f900d8.svg",
+    "static/media/plus.svg": "/react-sneakers/static/media/plus.b88e94c67ea7ac0cfa69033241c96b8c.svg",
+    "static/media/arrow.svg": "/react-sneakers/static/media/arrow.fc3222511ec5a224a4abf3bbf4c2566f.svg",
+    "static/media/btn-back.svg": "/react-sneakers/static/media/btn-back.ec78391c73aeadc3caa23bc2596d6c2a.svg",
+    "main.d68c8c4f.css.map": "/react-sneakers/static/css/main.d68c8c4f.css.map",
+    "main.f729ab1b.js.map": "/react-sneakers/static/js/main.f729ab1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d68c8c4f.css",
+    "static/js/main.f729ab1b.js"
+  ]
+}
