@@ -1,6 +1,4 @@
-Интернет-магазин кроссовок - **React Sneakers**
-
-### [Site link](https://maria-khabian.github.io/react-sneakers/)
+### [Online store of sneakers - **React Sneakers**](https://maria-khabian.github.io/react-sneakers/) (Сlick on the link or image to access the website)
 
 [![main_page](https://github.com/maria-khabian/react-sneakers/blob/master/screenShots/main_page.jpg)](https://maria-khabian.github.io/react-sneakers/)
 
