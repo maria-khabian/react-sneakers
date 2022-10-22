@@ -48,7 +48,7 @@ function Drawer({ items = [], onCloseCart, onDelete, opened }) {
     <div className={`${st.overlay} ${opened ? st.overlayVisible : ''}`}>
       <div className={st.drawer}>
         <h2>
-          Корзина
+          Cart
           <img onClick={onCloseCart} width={32} height={32} src={close} alt="close" />
         </h2>
 
@@ -62,7 +62,7 @@ function Drawer({ items = [], onCloseCart, onDelete, opened }) {
                   <img width={70} height={70} src={obj.imgUrl} alt={obj.alt} />
                   <div className={st.cartInfo}>
                     <p>{obj.title}</p>
-                    <span>{obj.price} руб.</span>
+                    <span>{obj.price} $</span>
                   </div>
                   <button onClick={() => onDelete(obj.id)} className={st.removeBtn}>
                     <img width={32} height={32} src={close} alt="close" />
@@ -72,28 +72,28 @@ function Drawer({ items = [], onCloseCart, onDelete, opened }) {
             </ul>
             <ul className={st.commonPriseList}>
               <li>
-                <span>Итого:</span>
+                <span>Total:</span>
                 <div></div>
-                <b>{totalPrice} руб. </b>
+                <b>{totalPrice} $ </b>
               </li>
               <li>
-                <span>Налог 5%:</span>
+                <span>Tax 5%:</span>
                 <div></div>
-                <b>{((totalPrice / 100) * 5).toFixed(2)} руб. </b>
+                <b>{((totalPrice / 100) * 5).toFixed(2)} $ </b>
               </li>
             </ul>
             <button disabled={isLoading} onClick={onClickOrder} className={st.greenBtn}>
-              Оформить заказ
+              Place an order
               <img width={14} height={12} src={arrow} alt="arrow" />
             </button>
           </>
         ) : (
           <Info
-            title={isOrderCompeted ? 'Заказ оформлен!' : 'Корзина пустая'}
+            title={isOrderCompeted ? 'Order placed!' : 'Cart is empty'}
             description={
               isOrderCompeted
-                ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке`
-                : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'
+                ? `Your order #${orderId} will soon be handed over to courier delivery.`
+                : 'Add at least one pair of trainers to place your order.'
             }
             image={isOrderCompeted ? completeOrder : emptyCart}
             src={arrow}
@@ -104,12 +104,12 @@ function Drawer({ items = [], onCloseCart, onDelete, opened }) {
           <li>
             <span>Итого:</span>
             <div></div>
-            <b>21 498 руб. </b>
+            <b>21 498 $ </b>
           </li>
           <li>
             <span>Налог 5%:</span>
             <div></div>
-            <b>1074 руб. </b>
+            <b>1074 $ </b>
           </li>
         </ul>
         <button className={st.greenBtn}>

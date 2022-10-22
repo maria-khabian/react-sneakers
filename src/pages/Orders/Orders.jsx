@@ -23,7 +23,7 @@ function Orders() {
         setOrders(data.reduce((prev, obj) => [...prev, ...obj.items], []));
         setIsLoading(false);
       } catch (error) {
-        alert('Ошибка при запросе заказов');
+        alert('Error when requesting orders');
         console.error(error);
       }
     })();
@@ -35,7 +35,7 @@ function Orders() {
         <Link to="/">
           <img className={st.back} src={btnBack} alt="Back" />
         </Link>
-        <h1>Мои заказы</h1>
+        <h1>My orders</h1>
       </div>
       {/* sneakersCard cтили взяла из index.scss навесив нужный класс*/}
       <div className={st.favoritesCard}>

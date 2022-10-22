@@ -42,7 +42,7 @@ function App() {
         setFavorites(favoritesResponse.data);
         setItems(itemsResponse.data);
       } catch (error) {
-        alert('Ошибка при запросе данных ;(');
+        alert('Error in requesting data ;(');
       }
     }
 
@@ -75,7 +75,7 @@ function App() {
         );
       }
     } catch (error) {
-      console.log('Ошибка при добавлении в корзину');
+      console.log('Error when adding to cart');
     }
   };
 
@@ -88,7 +88,7 @@ function App() {
       axios.delete(`https://634bff29317dc96a308f110a.mockapi.io/cart/${id}`);
       setCartItems((prev) => prev.filter((item) => item.id !== id));
     } catch (error) {
-      alert('Ошибка при удалении из корзины');
+      alert('Error when deleting from the cart');
     }
   };
 
