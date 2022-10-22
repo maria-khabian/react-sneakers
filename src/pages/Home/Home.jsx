@@ -38,7 +38,7 @@ function Home({
         <h1>{searchValue ? `Searching: ${searchValue}` : 'All sneakers'}</h1>
         <div className="searchBlock">
           <img width={14.25} height={14.25} src={search} alt="search" />
-          <input onChange={onChangeSearchInpute} value={searchValue} placeholder="Поиск..." />
+          <input onChange={onChangeSearchInpute} value={searchValue} placeholder="Search..." />
           {searchValue ? (
             <img
               onClick={onClearInput}
